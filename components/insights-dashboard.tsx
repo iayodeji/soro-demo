@@ -215,17 +215,17 @@ export function InsightsDashboard() {
   return (
     <div className="w-full">
       {/* Header */}
-      <div className="mb-10">
-        <h1 className="text-6xl font-display font-bold text-foreground mb-4 leading-tight">
+      <div className="mb-8">
+        <h1 className="text-4xl font-display font-bold text-foreground mb-2 leading-tight">
           Research Insights
         </h1>
-        <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed font-light">
+        <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed font-light">
           AI-synthesized insights from conversations, organized by themes and behavioral patterns. All linked to original quotes and student profiles.
         </p>
       </div>
 
       {/* Batch banner */}
-      <div className="mb-8 p-5 rounded-xl border border-border/50 bg-muted/20 flex flex-wrap items-center justify-between gap-3">
+      <div className="mb-6 p-5 rounded-xl border border-border/50 bg-muted/20 flex flex-wrap items-center justify-between gap-3">
         <div>
           <p className="text-sm font-semibold text-foreground">
             Batch #1 · {totalConversations} conversations across {campuses.length} campuses
@@ -237,7 +237,7 @@ export function InsightsDashboard() {
       </div>
 
       {/* View toggle */}
-      <div className="mb-8 inline-flex rounded-xl border border-border/50 p-1 bg-muted/20">
+      <div className="mb-6 inline-flex rounded-xl border border-border/50 p-1 bg-muted/20">
         <button
           onClick={() => setView('individual')}
           className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-smooth ${
@@ -263,7 +263,7 @@ export function InsightsDashboard() {
       </div>
 
       {/* Search & Filters */}
-      <div className="mb-10 space-y-5">
+      <div className="mb-8 space-y-4">
         {/* Search Bar */}
         <div className="relative">
           <Search className="absolute left-5 top-1/2 transform -translate-y-1/2 text-muted-foreground w-5 h-5" />

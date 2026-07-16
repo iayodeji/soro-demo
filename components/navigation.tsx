@@ -19,15 +19,13 @@ export function Navigation({ currentPage }: NavigationProps) {
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/95 border-b border-border/50">
-      <div className="max-w-7xl mx-auto px-6 py-5">
-        <div className="flex items-center justify-between mb-5">
-          <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-lg bg-primary text-primary-foreground flex items-center justify-center text-lg font-bold font-display">
-              S
-            </div>
-            <span className="text-lg font-display font-bold text-foreground">Sòrò</span>
+      <div className="max-w-7xl mx-auto px-6 py-2">
+        <div className="flex items-center justify-between mb-2">
+          <div className="flex items-center gap-3">
+            <img src="/logo.png" alt="Sòrò logo" className="h-6 w-auto" />
+            <span className="text-base font-display font-bold text-foreground">Sòrò</span>
           </div>
-          <span className="text-sm text-muted-foreground font-light">
+          <span className="text-xs text-muted-foreground font-light">
             Page {currentPage} of 4
           </span>
         </div>
@@ -38,7 +36,7 @@ export function Navigation({ currentPage }: NavigationProps) {
               key={page.number}
               onClick={() => navigateToPage(page.number)}
               className={cn(
-                'px-4 py-2.5 rounded-xl text-sm font-medium transition-smooth',
+                'px-3 py-1 rounded-lg text-xs font-medium transition-smooth',
                 currentPage === page.number
                   ? 'bg-primary text-primary-foreground shadow-sm'
                   : 'text-foreground hover:bg-muted/40 hover:border-border'

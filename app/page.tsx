@@ -29,7 +29,7 @@ export default function Page() {
   return (
     <>
       <Navigation currentPage={currentPage} />
-      <main className="min-h-screen bg-background text-foreground pt-32 pb-32">
+      <main className="min-h-screen bg-background text-foreground pt-20 pb-20">
         <div className="max-w-7xl mx-auto px-6">
           {renderPage()}
         </div>

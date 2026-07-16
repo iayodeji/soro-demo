@@ -67,11 +67,11 @@ export function BriefForm() {
   return (
     <div className="w-full">
       {/* Header */}
-      <div className="mb-16">
-        <h1 className="text-6xl font-display font-bold text-foreground mb-4 leading-tight">
+      <div className="mb-8">
+        <h1 className="text-4xl font-display font-bold text-foreground mb-2 leading-tight">
           Define Your Research Brief
         </h1>
-        <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed font-light">
+        <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed font-light">
           Tell us about your research objectives in natural language. Sòrò&apos;s AI will intelligently match you with the most relevant students from our network.
         </p>
       </div>

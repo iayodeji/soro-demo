@@ -91,11 +91,11 @@ export function MatchingPipeline() {
   return (
     <div className="w-full">
       {/* Header */}
-      <div className="mb-16">
-        <h1 className="text-6xl font-display font-bold text-foreground mb-4 leading-tight">
+      <div className="mb-8">
+        <h1 className="text-4xl font-display font-bold text-foreground mb-2 leading-tight">
           Intelligent Student Matching
         </h1>
-        <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed font-light">
+        <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed font-light">
           Sòrò analyzed your research brief and conducted mini-intake conversations with our student network. Below are the highest-confidence matches.
         </p>
       </div>

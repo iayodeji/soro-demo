@@ -18,7 +18,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'Sòrò – AI-Moderated Consumer Insights',
   description: 'Intelligent research platform for Nigerian brands',
-  generator: 'v0.app',
+  generator: 'Inioluwa',
   icons: {
     icon: [
       {
