@@ -101,7 +101,8 @@ export function ConversationView() {
   const [typingParticipant, setTypingParticipant] = useState<'moderator' | 'student' | null>(null)
   
   const conversation = mockConversations[selectedConversation]
-  const messagesEndRef = useRef<HTMLDivElement>(null)
+  const messagesContainerRef = useRef<HTMLDivElement>(null)
+  const shouldFollowMessagesRef = useRef(true)
 
   // Slideshow Navigation
   const handlePrev = () => {
@@ -116,12 +117,24 @@ export function ConversationView() {
     )
   }
 
+  const handleMessagesScroll = () => {
+    const container = messagesContainerRef.current
+    if (!container) return
+
+    const distanceFromBottom =
+      container.scrollHeight - container.scrollTop - container.clientHeight
+
+    // Only keep auto-following while the reader is at the latest message.
+    shouldFollowMessagesRef.current = distanceFromBottom < 24
+  }
+
   // Handle the chat typing animation
   useEffect(() => {
     let timeoutId: NodeJS.Timeout
     let typingTimeoutId: NodeJS.Timeout
 
-    // Reset when switching conversations
+    // Reset when switching conversations and begin the new transcript at its end.
+    shouldFollowMessagesRef.current = true
     setVisibleMessages([])
     setIsTyping(false)
     setTypingParticipant(null)
@@ -160,9 +173,12 @@ export function ConversationView() {
     }
   }, [selectedConversation])
 
-  // Auto-scroll to bottom when new messages or typing indicator appears
+  // Keep the latest message in view without overriding someone reading earlier messages.
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
+    const container = messagesContainerRef.current
+    if (!container || !shouldFollowMessagesRef.current) return
+
+    container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' })
   }, [visibleMessages, isTyping])
 
   return (
@@ -273,7 +289,11 @@ export function ConversationView() {
         </div>
 
         {/* Messages Chat Area */}
-        <div className="space-y-4 h-[500px] overflow-y-auto pr-3 custom-scrollbar flex flex-col">
+        <div
+          ref={messagesContainerRef}
+          onScroll={handleMessagesScroll}
+          className="space-y-4 h-[500px] overflow-y-auto pr-3 custom-scrollbar flex flex-col"
+        >
           {visibleMessages.map((msg) => (
             <div
               key={msg.id}
@@ -326,9 +346,6 @@ export function ConversationView() {
               </div>
             </div>
           )}
-          
-          {/* Invisible div to snap scroll to bottom */}
-          <div ref={messagesEndRef} className="h-1" />
         </div>
       </div>
 
