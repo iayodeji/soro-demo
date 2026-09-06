@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "researchTopic": "How Nigerian university students actually study, and where their tools break down",
+    "batchLabel": "Batch #1",
+    "totalConversations": 6,
+    "totalQuotes": 41,
+    "note": "Mock research data for the study-tools/edtech demo. Swap in real conversations by keeping this exact shape."
+  },
+
+  "categoryLabels": {
+    "lecture_material_lossy": "Lecture material loses the explanation",
+    "content_fragmentation": "Study material fragmentation",
+    "no_understanding_feedback": "No feedback loop on understanding",
+    "cram_time_pressure": "Cram-window study behavior",
+    "past_question_reliance": "Past-question over-reliance",
+    "tool_inadequacy": "Generic tools, course-blind",
+    "peer_dependency": "Peer/course-rep dependency",
+    "note_organization": "Cross-course note organization"
+  },
+
+  "categoryActions": {
+    "lecture_material_lossy": "Build a way to recover the 'why' behind a slide — not just summarize the bullets, reconstruct the reasoning a lecturer would have said out loud.",
+    "content_fragmentation": "Let a student dump every format (PDF, voice note, scanned page) into one place and get one coherent study surface back.",
+    "no_understanding_feedback": "Give students a cheap way to test 'do I actually get this' days before the exam, not just past questions the night before.",
+    "cram_time_pressure": "Design the core workflow for a 4-6 hour cram window first, not a steady daily-review habit — that's when the tool earns its keep.",
+    "past_question_reliance": "Pair past questions with the underlying concept so pattern-matching turns into actual understanding.",
+    "tool_inadequacy": "Ground every generated explanation, quiz, or summary in the student's own lecture material, not a generic textbook answer.",
+    "peer_dependency": "Make the course-rep/'send me your notes' loop obsolete by giving every student the same quality of explanation on demand.",
+    "note_organization": "Auto-structure material by course and topic so revision doesn't start with 20 minutes of file-hunting."
+  },
+
+  "lensContent": {
+    "decision": {
+      "eyebrow": "Decision workspace",
+      "title": "Choose what deserves attention first",
+      "description": "Use the strongest recurring signals to decide what the product should solve first, before pitching to a tech partner.",
+      "nextMove": "Solve comprehension before building more content-generation features",
+      "nextMoveDetail": "Students don't lack material — they lack a way to turn raw slides and voice notes into something they actually understand. That's the wedge, not another content library.",
+      "categories": ["lecture_material_lossy", "no_understanding_feedback", "content_fragmentation", "cram_time_pressure"],
+      "evidenceTitle": "The evidence behind the priority",
+      "evidenceDescription": "The broadest readout across comprehension gaps, study behavior, and tool frustrations."
+    },
+    "product": {
+      "eyebrow": "Product workspace",
+      "title": "Find the friction the product should remove",
+      "description": "Translate study behavior into concrete product features with evidence behind each one.",
+      "nextMove": "Ship a 'explain this slide like my lecturer would' feature before a generic flashcard generator",
+      "nextMoveDetail": "The recurring complaint isn't 'I don't have flashcards,' it's 'I don't understand what this slide is even saying.' Comprehension is the unmet feature.",
+      "categories": ["lecture_material_lossy", "tool_inadequacy", "note_organization", "past_question_reliance"],
+      "evidenceTitle": "Product friction, traced to behavior",
+      "evidenceDescription": "Evidence about what students need explained, tested, and organized before they can actually study."
+    },
+    "marketing": {
+      "eyebrow": "Marketing workspace",
+      "title": "Turn real student language into a sharper pitch",
+      "description": "Identify the proof points and language that should shape the pitch to tech-company partners and investors.",
+      "nextMove": "Lead with 'compression and verification,' not 'AI study buddy'",
+      "nextMoveDetail": "Generic AI-tutor framing undersells the actual problem. The pitch should name the two things students are missing: turning raw material into structure, and confirming they understand it before the exam does.",
+      "categories": ["content_fragmentation", "no_understanding_feedback", "cram_time_pressure", "peer_dependency"],
+      "evidenceTitle": "The language and proof marketing can use",
+      "evidenceDescription": "Evidence about discovery of workarounds, dependency on peers, and the moments students feel most stuck."
+    },
+    "campaign": {
+      "eyebrow": "Campaign/demo workspace",
+      "title": "Choose the next message worth testing on a tech-company audience",
+      "description": "Move from broad findings to a focused demo narrative a partner or investor can react to quickly.",
+      "nextMove": "Test 'we fix the cram window' against 'we fix the whole semester'",
+      "nextMoveDetail": "Evidence suggests the acute pain is concentrated in the pre-exam cram period, not steady daily study — a narrower, sharper demo may land better than a broad platform pitch.",
+      "categories": ["cram_time_pressure", "past_question_reliance", "lecture_material_lossy", "tool_inadequacy"],
+      "evidenceTitle": "Demo hypotheses with supporting proof",
+      "evidenceDescription": "Evidence you can turn into a live demo moment, with the counter-signal visible beside it."
+    }
+  },
+
+  "conversations": [
+    {
+      "studentName": "Ifeoma Chukwu",
+      "studentCampus": "UNILAG, Lagos",
+      "studentCourse": "Law",
+      "duration": "7 min",
+      "insightsCount": 5,
+      "messages": [
+        { "id": "1", "type": "moderator", "content": "hey Ifeoma, walk me through the last time you sat down to prepare for a test or exam. what did that actually look like?", "timestamp": "3:02 PM" },
+        { "id": "2", "type": "student", "content": "lol okay so for Law of Contract test, I sat with like 40 pages of case notes the night before and I no even fit remember which case was for which principle again", "timestamp": "3:03 PM", "studentName": "Ifeoma" },
+        { "id": "3", "type": "moderator", "content": "what made it hard to keep the cases straight — was it the volume, or something about how the notes were written?", "timestamp": "3:03 PM" },
+        { "id": "4", "type": "student", "content": "honestly the notes are just case name + one-line holding. the lecturer explained the reasoning in class but that part never made it to the slide, so I'm just left with facts with no logic connecting them", "timestamp": "3:04 PM", "studentName": "Ifeoma" },
+        { "id": "5", "type": "moderator", "content": "when that happens, what do you normally do to fill the gap?", "timestamp": "3:05 PM" },
+        { "id": "6", "type": "student", "content": "I dey message my course rep or check old students' typed notes on our WhatsApp group, but half the time nobody explains it well either, they just paraphrase the same slide", "timestamp": "3:05 PM", "studentName": "Ifeoma" },
+        { "id": "7", "type": "moderator", "content": "have you tried any app or tool to help with this — flashcards, summarizers, anything like that?", "timestamp": "3:06 PM" },
+        { "id": "8", "type": "student", "content": "I don try Quizlet before but I still need to type in the cards myself first, which na the actual hard work. and ChatGPT dey give correct-correct textbook definitions that no reason like our lecturer reason am", "timestamp": "3:07 PM" },
+        { "id": "9", "type": "moderator", "content": "what would it take for a tool to actually feel useful to you here?", "timestamp": "3:07 PM" },
+        { "id": "10", "type": "student", "content": "if I fit just upload the case note and my lecture recording and e go tell me 'this is why this case matters, this is how it connects to the last one' — that's the thing I'm always trying to reconstruct manually", "timestamp": "3:08 PM", "studentName": "Ifeoma" },
+        { "id": "11", "type": "moderator", "content": "how do you know when you're actually ready for the exam, versus just feeling like you've read enough?", "timestamp": "3:09 PM" },
+        { "id": "12", "type": "student", "content": "honestly I don't know until I sit in the exam hall and see the question. that's the scary part, there's no way to test myself before that moment", "timestamp": "3:09 PM", "studentName": "Ifeoma" },
+        { "id": "13", "type": "moderator", "content": "thank you so much for this, Ifeoma, really helpful", "timestamp": "3:10 PM" }
+      ]
+    },
+    {
+      "studentName": "Damilare Ojo",
+      "studentCampus": "UI, Ibadan",
+      "studentCourse": "Mechanical Engineering",
+      "duration": "6 min",
+      "insightsCount": 4,
+      "messages": [
+        { "id": "1", "type": "moderator", "content": "hey Damilare, tell me about the last course you found genuinely hard to study for. what happened?", "timestamp": "10:14 AM" },
+        { "id": "2", "type": "student", "content": "Thermodynamics II. the slides are basically equations and one diagram per slide, no explanation of where the equation comes from or when to use which one", "timestamp": "10:15 AM", "studentName": "Damilare" },
+        { "id": "3", "type": "moderator", "content": "so what do you do when a slide alone doesn't explain enough?", "timestamp": "10:15 AM" },
+        { "id": "4", "type": "student", "content": "I go back to my handwritten notes from class, but I no fit write fast enough to catch everything the lecturer talk, so my notes get plenty gaps too. sometimes I just watch random YouTube videos hoping one go explain am well", "timestamp": "10:16 AM", "studentName": "Damilare" },
+        { "id": "5", "type": "moderator", "content": "how much time does that YouTube search usually take, and does it actually solve it?", "timestamp": "10:17 AM" },
+        { "id": "6", "type": "student", "content": "e fit take one hour sha, and half the videos dey use different notation from wetin our lecturer use, so I still have to translate am for my head", "timestamp": "10:17 AM", "studentName": "Damilare" },
+        { "id": "7", "type": "moderator", "content": "when you're prepping right before a test, what does your actual routine look like?", "timestamp": "10:18 AM" },
+        { "id": "8", "type": "student", "content": "the night before or maybe two days before, I go through past questions and try to match them to formulas I remember. if I see one wey I no sabi, I just cram the steps without really understanding why", "timestamp": "10:19 AM", "studentName": "Damilare" },
+        { "id": "9", "type": "moderator", "content": "has that ever backfired — cramming steps without the underlying logic?", "timestamp": "10:19 AM" },
+        { "id": "10", "type": "student", "content": "definitely, if the exam change the numbers or twist the question small, I dey stuck because I memorize a pattern, I no understand the actual principle", "timestamp": "10:20 AM", "studentName": "Damilare" },
+        { "id": "11", "type": "moderator", "content": "thanks a lot Damilare, this is really useful", "timestamp": "10:20 AM" }
+      ]
+    },
+    {
+      "studentName": "Ngozi Eze",
+      "studentCampus": "OAU, Ile-Ife",
+      "studentCourse": "Medicine & Surgery",
+      "duration": "8 min",
+      "insightsCount": 6,
+      "messages": [
+        { "id": "1", "type": "moderator", "content": "hi Ngozi, describe how you prepare for a major exam — like a professional exam or a big course exam.", "timestamp": "1:40 PM" },
+        { "id": "2", "type": "student", "content": "omo, medicine na wahala for this one. we get like 200+ slides per course, plus textbook chapters, plus voice notes from course reps summarizing what lecturers emphasized", "timestamp": "1:41 PM", "studentName": "Ngozi" },
+        { "id": "3", "type": "moderator", "content": "how do you decide what to actually focus on out of all that material?", "timestamp": "1:41 PM" },
+        { "id": "4", "type": "student", "content": "mostly by listening to the WhatsApp voice notes — the course rep dey summarize 'lecturer emphasized this, skip that' — because there's no way I'm reading 200 slides properly in the time we have", "timestamp": "1:42 PM", "studentName": "Ngozi" },
+        { "id": "5", "type": "moderator", "content": "what happens if the course rep's summary is wrong or incomplete?", "timestamp": "1:43 PM" },
+        { "id": "6", "type": "student", "content": "e don happen before, we all read the wrong emphasis and the exam focused on something else entirely. everybody vex, but wetin we go do, na the only compression tool we get", "timestamp": "1:43 PM", "studentName": "Ngozi" },
+        { "id": "7", "type": "moderator", "content": "when do you actually sit down and study most intensely — is it spread out or concentrated?", "timestamp": "1:44 PM" },
+        { "id": "8", "type": "student", "content": "very concentrated, honestly. we call it 'the crash period' — like 3 to 5 days before a major exam where we barely sleep and just consume everything at once", "timestamp": "1:45 PM", "studentName": "Ngozi" },
+        { "id": "9", "type": "moderator", "content": "during that crash period, what tools or resources do you lean on most?", "timestamp": "1:45 PM" },
+        { "id": "10", "type": "student", "content": "past questions first, then whatever WhatsApp voice notes are floating around, then textbook only if I still get time — which I rarely do", "timestamp": "1:46 PM", "studentName": "Ngozi" },
+        { "id": "11", "type": "moderator", "content": "if you could wave a wand and fix one part of that crash period, what would it be?", "timestamp": "1:47 PM" },
+        { "id": "12", "type": "student", "content": "honestly, something that can take all this scattered material — slides, voice notes, textbook chapters — and just tell me clearly 'these are the 20 things that matter most for this exam, here's why.' right now that compression work is entirely on us", "timestamp": "1:48 PM", "studentName": "Ngozi" },
+        { "id": "13", "type": "moderator", "content": "this is incredibly helpful, thank you so much Ngozi", "timestamp": "1:48 PM" }
+      ]
+    },
+    {
+      "studentName": "Yakubu Sule",
+      "studentCampus": "ABU, Zaria",
+      "studentCourse": "Economics",
+      "duration": "6 min",
+      "insightsCount": 4,
+      "messages": [
+        { "id": "1", "type": "moderator", "content": "hey Yakubu, when you're getting ready for an economics exam, where do you usually start?", "timestamp": "9:05 AM" },
+        { "id": "2", "type": "student", "content": "I start from past questions straight up, like 5-10 years back. I dey try find patterns for the type of questions dem dey ask", "timestamp": "9:06 AM", "studentName": "Yakubu" },
+        { "id": "3", "type": "moderator", "content": "when you're going through those past questions, are you also going back to the actual course material to understand the concepts?", "timestamp": "9:06 AM" },
+        { "id": "4", "type": "student", "content": "sometimes, but honestly if I fit match a question style to a formula I don see before, I just apply am. I no dey always sure say I really understand the underlying concept well well", "timestamp": "9:07 AM", "studentName": "Yakubu" },
+        { "id": "5", "type": "moderator", "content": "has there been a time that pattern-matching approach let you down?", "timestamp": "9:08 AM" },
+        { "id": "6", "type": "student", "content": "yes o, last semester exam question wey dem twist small, e no follow the usual pattern, and I just froze because I no get the real understanding, just memorized steps", "timestamp": "9:08 AM", "studentName": "Yakubu" },
+        { "id": "7", "type": "moderator", "content": "after that experience, did you change how you study at all?", "timestamp": "9:09 AM" },
+        { "id": "8", "type": "student", "content": "I try to read the textbook chapter small before jumping to past questions now, but the textbook is long and dense, so most times I still end up rushing back to past questions because time no dey", "timestamp": "9:10 AM", "studentName": "Yakubu" },
+        { "id": "9", "type": "moderator", "content": "if there was a way to check whether you actually understand a concept, separate from just doing past questions, would that change anything?", "timestamp": "9:10 AM" },
+        { "id": "10", "type": "student", "content": "definitely, right now the only 'test' I get na the past question itself, there's no in-between check before that", "timestamp": "9:11 AM", "studentName": "Yakubu" },
+        { "id": "11", "type": "moderator", "content": "thanks a lot for your time Yakubu", "timestamp": "9:11 AM" }
+      ]
+    },
+    {
+      "studentName": "Tobi Alabi",
+      "studentCampus": "FUTA, Akure",
+      "studentCourse": "Computer Science",
+      "duration": "7 min",
+      "insightsCount": 5,
+      "messages": [
+        { "id": "1", "type": "moderator", "content": "hey Tobi, tell me about the different places you actually pull study material from for one course.", "timestamp": "5:20 PM" },
+        { "id": "2", "type": "student", "content": "for like Data Structures, I get the lecturer's slides on Google Classroom, a textbook PDF, YouTube tutorials for the parts I no understand, and voice notes course rep dey send for our group", "timestamp": "5:21 PM", "studentName": "Tobi" },
+        { "id": "3", "type": "moderator", "content": "when you need to actually revise, how do you bring all of that together?", "timestamp": "5:22 PM" },
+        { "id": "4", "type": "student", "content": "honestly I don't, most times I just pick whichever source is fastest to access at that moment, so I never really get the full picture in one place", "timestamp": "5:22 PM", "studentName": "Tobi" },
+        { "id": "5", "type": "moderator", "content": "does that ever cause a problem, like conflicting information or missing something?", "timestamp": "5:23 PM" },
+        { "id": "6", "type": "student", "content": "yeah, sometimes the YouTube video dey use a different implementation approach from wetin lecturer use, so during exam I confuse which own to write down", "timestamp": "5:24 PM", "studentName": "Tobi" },
+        { "id": "7", "type": "moderator", "content": "have you tried any AI tools like ChatGPT for this?", "timestamp": "5:24 PM" },
+        { "id": "8", "type": "student", "content": "I use am plenty, but e no sabi wetin our lecturer specifically taught or the exact syllabus scope, so e go explain concepts generally, sometimes beyond wetin we need or missing the specific angle our course dey focus on", "timestamp": "5:25 PM", "studentName": "Tobi" },
+        { "id": "9", "type": "moderator", "content": "what would 'good' look like for you — a tool that actually solves this?", "timestamp": "5:26 PM" },
+        { "id": "10", "type": "student", "content": "one place where I drop all my course material — slides, textbook, voice notes — and it organizes everything by topic and tells me straight up what's actually important for my exam, not a random internet explanation", "timestamp": "5:27 PM", "studentName": "Tobi" },
+        { "id": "11", "type": "moderator", "content": "this has been super helpful, thanks Tobi", "timestamp": "5:27 PM" }
+      ]
+    },
+    {
+      "studentName": "Halima Bello",
+      "studentCampus": "UNN, Nsukka",
+      "studentCourse": "Accounting",
+      "duration": "6 min",
+      "insightsCount": 4,
+      "messages": [
+        { "id": "1", "type": "moderator", "content": "hi Halima, how are you feeling right before a big exam, and what are you actually doing in those final days?", "timestamp": "2:15 PM" },
+        { "id": "2", "type": "student", "content": "honestly very anxious, because up until I enter the exam hall, I don't really know if I've understood the material well enough. that uncertainty is the worst part", "timestamp": "2:16 PM", "studentName": "Halima" },
+        { "id": "3", "type": "moderator", "content": "what do you usually do to try to reduce that uncertainty before the exam?", "timestamp": "2:16 PM" },
+        { "id": "4", "type": "student", "content": "I read through my notes again and again, but re-reading doesn't really tell me if I understand it, it just tells me if I remember seeing it before", "timestamp": "2:17 PM", "studentName": "Halima" },
+        { "id": "5", "type": "moderator", "content": "have you ever used flashcards or quiz apps to test yourself?", "timestamp": "2:18 PM" },
+        { "id": "6", "type": "student", "content": "I try Quizlet once, but I had to manually create every card myself, and creating the cards took almost as long as studying the actual material, so I stopped", "timestamp": "2:18 PM", "studentName": "Halima" },
+        { "id": "7", "type": "moderator", "content": "what would make that self-testing step actually worth doing for you?", "timestamp": "2:19 PM" },
+        { "id": "8", "type": "student", "content": "if the questions just generated themselves from my own lecture notes automatically, so I'm not spending time building the test instead of taking it", "timestamp": "2:20 PM", "studentName": "Halima" },
+        { "id": "9", "type": "moderator", "content": "when you get a question wrong on a past exam or quiz, what do you do next?", "timestamp": "2:20 PM" },
+        { "id": "10", "type": "student", "content": "I just note the correct answer and move on most times, I rarely go back to actually understand why I got it wrong because there's no time to dig deeper", "timestamp": "2:21 PM", "studentName": "Halima" },
+        { "id": "11", "type": "moderator", "content": "thank you so much for sharing this, Halima", "timestamp": "2:21 PM" }
+      ]
+    }
+  ],
+
+  "insights": [
+    { "id": "if1", "category": "lecture_material_lossy", "theme": "Slides keep the fact, drop the reasoning", "description": "Lecture slides record the conclusion (a case holding, a formula) but not the explanation that connected it to the topic — that part only existed in spoken class time.", "frequency": 8, "quote": "the notes are just case name plus one-line holding, but the reasoning never made it to the slide", "studentName": "Ifeoma Chukwu", "studentCampus": "UNILAG, Lagos", "sentiment": "negative" },
+    { "id": "if2", "category": "peer_dependency", "theme": "Course-rep notes just re-paraphrase the same gap", "description": "When students turn to peers or course reps to fill a comprehension gap, they often just get a reworded version of the same incomplete slide, not the missing explanation.", "frequency": 6, "quote": "half the time nobody explains it well either, they just paraphrase the same slide", "studentName": "Ifeoma Chukwu", "studentCampus": "UNILAG, Lagos", "sentiment": "negative" },
+    { "id": "if3", "category": "tool_inadequacy", "theme": "Generic AI answers don't match how the lecturer reasons", "description": "ChatGPT-style tools give textbook-correct explanations, but they don't follow the specific reasoning style or emphasis the student's own lecturer used.", "frequency": 7, "quote": "ChatGPT gives correct textbook definitions that don't reason like our lecturer reasons", "studentName": "Ifeoma Chukwu", "studentCampus": "UNILAG, Lagos", "sentiment": "negative" },
+    { "id": "if4", "category": "no_understanding_feedback", "theme": "The exam is the first real test of understanding", "description": "Students have no way to verify their own comprehension before the actual exam — the exam itself becomes the first checkpoint.", "frequency": 8, "quote": "I don't know until I sit in the exam hall and see the question, there's no way to test myself before that moment", "studentName": "Ifeoma Chukwu", "studentCampus": "UNILAG, Lagos", "sentiment": "negative" },
+
+    { "id": "da1", "category": "lecture_material_lossy", "theme": "Equation-only slides skip the derivation logic", "description": "Technical courses present formulas without the reasoning for when or why to use them, pushing students to hunt for that context elsewhere.", "frequency": 7, "quote": "the slides are basically equations and one diagram per slide, no explanation of where the equation comes from", "studentName": "Damilare Ojo", "studentCampus": "UI, Ibadan", "sentiment": "negative" },
+    { "id": "da2", "category": "content_fragmentation", "theme": "YouTube fills gaps but with mismatched notation", "description": "Students turn to external videos to understand a concept, but differing notation or approach forces extra translation work before it's usable.", "frequency": 5, "quote": "half the videos use different notation from what our lecturer used, so I still have to translate it in my head", "studentName": "Damilare Ojo", "studentCampus": "UI, Ibadan", "sentiment": "neutral" },
+    { "id": "da3", "category": "past_question_reliance", "theme": "Memorized steps break under twisted questions", "description": "Students who pattern-match past questions without grasping the underlying principle get stuck when an exam varies the question slightly.", "frequency": 8, "quote": "if the exam changes the numbers or twists the question small, I get stuck because I memorized a pattern, I don't understand the principle", "studentName": "Damilare Ojo", "studentCampus": "UI, Ibadan", "sentiment": "negative" },
+
+    { "id": "ng1", "category": "content_fragmentation", "theme": "Course-rep voice notes act as the real compression layer", "description": "With too much raw material to process, students rely on informal peer summaries (WhatsApp voice notes) to know what to prioritize — an unreliable but necessary shortcut.", "frequency": 8, "quote": "we all read the wrong emphasis and the exam focused on something else entirely, but that's the only compression tool we have", "studentName": "Ngozi Eze", "studentCampus": "OAU, Ile-Ife", "sentiment": "negative" },
+    { "id": "ng2", "category": "cram_time_pressure", "theme": "Studying concentrates into an intense multi-day 'crash period'", "description": "Students describe a specific, high-density pre-exam window (3-5 days) where nearly all serious studying happens, rather than steady pacing.", "frequency": 7, "quote": "we call it 'the crash period,' like 3 to 5 days before a major exam where we barely sleep and just consume everything at once", "studentName": "Ngozi Eze", "studentCampus": "OAU, Ile-Ife", "sentiment": "neutral" },
+    { "id": "ng3", "category": "tool_inadequacy", "theme": "No tool compresses scattered material into a priority list", "description": "Students want something that ingests all their fragmented material and tells them clearly what matters most, instead of doing that synthesis manually under time pressure.", "frequency": 8, "quote": "something that can take all this scattered material and just tell me clearly 'these are the 20 things that matter most,' right now that compression work is entirely on us", "studentName": "Ngozi Eze", "studentCampus": "OAU, Ile-Ife", "sentiment": "positive" },
+
+    { "id": "ya1", "category": "past_question_reliance", "theme": "Past questions are the default starting point, not concepts", "description": "Students often begin exam prep with past questions and pattern recognition rather than building conceptual understanding first.", "frequency": 7, "quote": "I start from past questions straight up, I'm trying to find patterns for the type of questions they ask", "studentName": "Yakubu Sule", "studentCampus": "ABU, Zaria", "sentiment": "neutral" },
+    { "id": "ya2", "category": "no_understanding_feedback", "theme": "There's no checkpoint between studying and the real exam", "description": "Students recognize they have no intermediate way to verify understanding — the past question or the real exam is the only test available.", "frequency": 6, "quote": "right now the only 'test' I get is the past question itself, there's no in-between check before that", "studentName": "Yakubu Sule", "studentCampus": "ABU, Zaria", "sentiment": "negative" },
+
+    { "id": "to1", "category": "content_fragmentation", "theme": "One course, four disconnected sources of material", "description": "Students juggle slides, textbook PDFs, YouTube, and peer voice notes for a single course, with no single place bringing them together.", "frequency": 8, "quote": "I get the lecturer's slides, a textbook PDF, YouTube tutorials, and voice notes course rep sends, but I never really get the full picture in one place", "studentName": "Tobi Alabi", "studentCampus": "FUTA, Akure", "sentiment": "negative" },
+    { "id": "to2", "category": "tool_inadequacy", "theme": "Generic AI explanations miss the specific course scope", "description": "AI chat tools explain concepts in general terms but don't know the specific syllabus scope or angle the student's course actually covers.", "frequency": 7, "quote": "it doesn't know what our lecturer specifically taught or the exact syllabus scope, so it explains concepts generally, sometimes beyond what we need", "studentName": "Tobi Alabi", "studentCampus": "FUTA, Akure", "sentiment": "negative" },
+    { "id": "to3", "category": "note_organization", "theme": "Students want one drop point that organizes by topic", "description": "The desired fix is a single place to drop all course material that then organizes it by topic and surfaces what's actually exam-relevant.", "frequency": 6, "quote": "one place where I drop all my course material and it organizes everything by topic and tells me what's actually important for my exam", "studentName": "Tobi Alabi", "studentCampus": "FUTA, Akure", "sentiment": "positive" },
+
+    { "id": "ha1", "category": "no_understanding_feedback", "theme": "Re-reading confirms familiarity, not understanding", "description": "Students recognize that repeatedly re-reading notes only confirms they've seen the material before, not that they actually understand it.", "frequency": 7, "quote": "re-reading doesn't really tell me if I understand it, it just tells me if I remember seeing it before", "studentName": "Halima Bello", "studentCampus": "UNN, Nsukka", "sentiment": "negative" },
+    { "id": "ha2", "category": "tool_inadequacy", "theme": "Manually building flashcards costs as much time as studying", "description": "Existing quiz tools require students to manually author every question, which consumes the same time budget they'd otherwise spend studying.", "frequency": 6, "quote": "creating the cards took almost as long as studying the actual material, so I stopped", "studentName": "Halima Bello", "studentCampus": "UNN, Nsukka", "sentiment": "negative" },
+    { "id": "ha3", "category": "no_understanding_feedback", "theme": "Wrong answers rarely get revisited under time pressure", "description": "When students get a practice question wrong, time pressure means they note the correct answer and move on instead of understanding the mistake.", "frequency": 5, "quote": "I rarely go back to actually understand why I got it wrong because there's no time to dig deeper", "studentName": "Halima Bello", "studentCampus": "UNN, Nsukka", "sentiment": "negative" }
+  ],
+
+  "matchingStudents": [
+    { "id": "1", "name": "Ifeoma Chukwu", "campus": "UNILAG, Lagos", "course": "Law", "bio": "Manages heavy case-law volume; relies on peer notes and AI tools but finds both miss the lecturer's specific reasoning.", "compatibilityScore": 95, "status": "selected" },
+    { "id": "2", "name": "Ngozi Eze", "campus": "OAU, Ile-Ife", "course": "Medicine & Surgery", "bio": "High-volume course load with an intense pre-exam 'crash period'; depends on informal WhatsApp compression from course reps.", "compatibilityScore": 93, "status": "selected" },
+    { "id": "3", "name": "Tobi Alabi", "campus": "FUTA, Akure", "course": "Computer Science", "bio": "Pulls study material from four separate sources per course; actively wants a single organizing tool.", "compatibilityScore": 91, "status": "selected" },
+    { "id": "4", "name": "Damilare Ojo", "campus": "UI, Ibadan", "course": "Mechanical Engineering", "bio": "Struggles with equation-heavy slides lacking derivation context; has been burned by pattern-matching past questions.", "compatibilityScore": 89, "status": "matched" },
+    { "id": "5", "name": "Halima Bello", "campus": "UNN, Nsukka", "course": "Accounting", "bio": "High pre-exam anxiety tied to lack of a self-testing feedback loop; tried and abandoned manual flashcard tools.", "compatibilityScore": 88, "status": "matched" },
+    { "id": "6", "name": "Yakubu Sule", "campus": "ABU, Zaria", "course": "Economics", "bio": "Defaults to past-question pattern matching over concept study; wants an intermediate way to check real understanding.", "compatibilityScore": 85, "status": "analyzing" }
+  ]
+}

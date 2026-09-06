@@ -2,16 +2,11 @@
 @import 'tw-animate-css';
 @import 'shadcn/tailwind.css';
 
-@font-face {
-  font-family: 'ClashDisplay';
-  src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
-}
-
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-display: 'Playfair Display', serif;
-  --font-sans: 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  --font-display: 'Inter', sans-serif;
+  --font-sans: 'Inter', sans-serif;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -54,38 +49,38 @@
 
 :root {
   color-scheme: light;
-  --background: #FDFBF2;
-  --foreground: #1F1612;
-  --card: rgba(255, 255, 255, 0.95);
-  --card-foreground: #1F1612;
-  --popover: rgba(255, 255, 255, 0.98);
-  --popover-foreground: #1F1612;
-  --primary: #B74A26;
-  --primary-foreground: #FDFBF2;
-  --secondary: #CFA331;
-  --secondary-foreground: #1F1612;
-  --muted: #E8E5DC;
-  --muted-foreground: #6B6158;
-  --accent: #7A8452;
-  --accent-foreground: #FDFBF2;
+  --background: #FFFFFF;
+  --foreground: #111111;
+  --card: #FFFFFF;
+  --card-foreground: #111111;
+  --popover: #FFFFFF;
+  --popover-foreground: #111111;
+  --primary: #F24E1E;
+  --primary-foreground: #111111;
+  --secondary: #F5F5F5;
+  --secondary-foreground: #111111;
+  --muted: #F5F5F5;
+  --muted-foreground: #666666;
+  --accent: #F24E1E;
+  --accent-foreground: #111111;
   --destructive: #EF4444;
-  --border: #E8E5DC;
-  --input: #FDFBF2;
-  --ring: #B74A26;
-  --chart-1: #B74A26;
-  --chart-2: #CFA331;
-  --chart-3: #7A8452;
-  --chart-4: #D4A574;
-  --chart-5: #8B7355;
-  --radius: 0.5rem;
-  --sidebar: #FDFBF2;
-  --sidebar-foreground: #1F1612;
-  --sidebar-primary: #B74A26;
-  --sidebar-primary-foreground: #FDFBF2;
-  --sidebar-accent: #CFA331;
-  --sidebar-accent-foreground: #1F1612;
-  --sidebar-border: #E8E5DC;
-  --sidebar-ring: #B74A26;
+  --border: #E5E5E5;
+  --input: #FFFFFF;
+  --ring: #F24E1E;
+  --chart-1: #F24E1E;
+  --chart-2: #111111;
+  --chart-3: #666666;
+  --chart-4: #E5E5E5;
+  --chart-5: #F5F5F5;
+  --radius: 0.375rem;
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #111111;
+  --sidebar-primary: #F24E1E;
+  --sidebar-primary-foreground: #111111;
+  --sidebar-accent: #F5F5F5;
+  --sidebar-accent-foreground: #111111;
+  --sidebar-border: #E5E5E5;
+  --sidebar-ring: #F24E1E;
 }
 
 .dark {
@@ -141,20 +136,12 @@
 }
 
 @layer components {
-  .glass-effect {
-    @apply backdrop-blur-md bg-white/[0.95] border border-white/20;
-  }
-
-  .glass-card {
-    @apply bg-card/95 backdrop-blur-sm border border-white/10 shadow-sm;
-  }
-
   .focus-ring {
-    @apply focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 focus:ring-offset-background;
+    @apply focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background;
   }
 
   .transition-smooth {
-    @apply transition-all duration-300 ease-out;
+    @apply transition-colors duration-150 ease-out;
   }
 
   .text-balance-optimized {

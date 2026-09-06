@@ -2,6 +2,7 @@
 
 import { cn } from '@/lib/utils'
 import { useFlow } from '@/contexts/flow-context'
+import { Check } from 'lucide-react'
 
 interface NavigationProps {
   currentPage: number
@@ -18,35 +19,38 @@ export function Navigation({ currentPage }: NavigationProps) {
   ]
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/95 border-b border-border/50">
-      <div className="max-w-7xl mx-auto px-6 py-2">
-        <div className="flex items-center justify-between mb-2">
-          <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="Sòrò logo" className="h-6 w-auto" />
-            <span className="text-base font-display font-bold text-foreground">Sòrò</span>
-          </div>
-          <span className="text-xs text-muted-foreground font-light">
-            Page {currentPage} of 4
-          </span>
+    <header className="sticky top-0 z-50 border-b border-border bg-background">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-4 lg:px-8">
+        <div className="flex shrink-0 items-center gap-3">
+          <img
+            src="/soro-logo-horizontal.jpg"
+            alt="Sóró"
+            className="h-10 w-auto object-contain"
+          />
         </div>
 
-        <div className="flex gap-2">
+        <nav aria-label="Research workflow" className="flex min-w-0 items-center gap-1 overflow-x-auto">
           {pages.map((page) => (
             <button
               key={page.number}
               onClick={() => navigateToPage(page.number)}
               className={cn(
-                'px-3 py-1 rounded-lg text-xs font-medium transition-smooth',
+                'flex shrink-0 items-center gap-2 border-b-2 px-3 py-2 text-sm font-medium transition-smooth',
                 currentPage === page.number
-                  ? 'bg-primary text-primary-foreground shadow-sm'
-                  : 'text-foreground hover:bg-muted/40 hover:border-border'
+                  ? 'border-primary text-foreground'
+                  : 'border-transparent text-muted-foreground hover:border-border hover:text-foreground'
               )}
             >
-              {page.number}. {page.title}
+              <span className={cn('grid h-5 w-5 place-items-center border text-xs', currentPage === page.number ? 'border-primary bg-primary text-primary-foreground' : 'border-border')}>
+                {page.number < currentPage ? <Check className="h-3 w-3" /> : page.number}
+              </span>
+              <span className="hidden sm:inline">{page.title}</span>
             </button>
           ))}
-        </div>
+        </nav>
+
+        <span className="hidden shrink-0 text-xs font-medium text-muted-foreground md:inline">Step {currentPage} of 4</span>
       </div>
-    </div>
+    </header>
   )
 }

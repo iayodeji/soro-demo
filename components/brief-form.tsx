@@ -3,37 +3,19 @@
 import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { useFlow } from '@/contexts/flow-context'
-
-const SAMPLE_DATA = {
-  brandName: 'The Gen-Z Corp',
-  objectives: 'Understand how Gen Z students in Lagos prefer to discover new fashion brands and what emotional triggers influence their purchasing decisions',
-  targetAudience: 'Students aged 18-24 currently studying at universities in Lagos and Abuja, interested in fashion and lifestyle, active on social media platforms',
-  keyQuestions: 'How do students currently discover new fashion brands? What are the main pain points? What emotional appeals resonate most? How influential are peer recommendations?',
-}
+import { brief } from '@/data/demo-data'
 
 export function BriefForm() {
   const { formData: contextFormData, setFormData, nextPage } = useFlow()
   const [formData, setFormDataLocal] = useState(contextFormData)
   const [isSubmitted, setIsSubmitted] = useState(false)
-  const [autoAdvanceTimer, setAutoAdvanceTimer] = useState<NodeJS.Timeout | null>(null)
 
   // Initialize with sample data on first load
   useEffect(() => {
     if (!contextFormData.brandName) {
-      setFormDataLocal(SAMPLE_DATA)
-      setFormData(SAMPLE_DATA)
+      setFormDataLocal(brief)
+      setFormData(brief)
     }
-  }, [])
-
-  // Auto-submit after 3 seconds on mount if data is pre-filled
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      if (formData.brandName && !isSubmitted) {
-        setIsSubmitted(true)
-      }
-    }, 3000)
-    setAutoAdvanceTimer(timer)
-    return () => clearTimeout(timer)
   }, [])
 
   const handleChange = (
@@ -51,17 +33,11 @@ export function BriefForm() {
     e.preventDefault()
     setFormData(formData)
     setIsSubmitted(true)
-    // Auto-advance to next page after 2 seconds
-    setTimeout(() => {
-      nextPage()
-    }, 3000)
+    nextPage()
   }
 
   const handleEditBrief = () => {
     setIsSubmitted(false)
-    if (autoAdvanceTimer) {
-      clearTimeout(autoAdvanceTimer)
-    }
   }
 
   return (
@@ -106,7 +82,7 @@ export function BriefForm() {
               name="objectives"
               value={formData.objectives}
               onChange={handleChange}
-              placeholder="E.g., We want to understand how Gen Z students in Lagos prefer to discover new fashion brands and what influences their purchasing decisions..."
+              placeholder="E.g., We want to understand where students struggle to turn lecture material into real understanding..."
               required
               rows={4}
               className="w-full px-5 py-4 rounded-xl border border-border bg-card text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-smooth resize-none hover:border-primary/30"
@@ -125,7 +101,7 @@ export function BriefForm() {
               name="targetAudience"
               value={formData.targetAudience}
               onChange={handleChange}
-              placeholder="E.g., Students aged 18-24, currently studying at universities in Lagos and Abuja, interested in fashion and lifestyle, active on social media..."
+              placeholder="E.g., Nigerian university students across different courses, campuses, and study routines..."
               required
               rows={4}
               className="w-full px-5 py-4 rounded-xl border border-border bg-card text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-smooth resize-none hover:border-primary/30"
@@ -144,7 +120,7 @@ export function BriefForm() {
               name="keyQuestions"
               value={formData.keyQuestions}
               onChange={handleChange}
-              placeholder="E.g., How do students currently shop for fashion? What are their pain points? What would make them switch brands? How influential are peers in their purchasing decisions?..."
+              placeholder="E.g., Where do study tools break down? How do students prepare under time pressure? What would make material easier to understand?..."
               required
               rows={4}
               className="w-full px-5 py-4 rounded-xl border border-border bg-card text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-smooth resize-none hover:border-primary/30"

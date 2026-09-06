@@ -3,90 +3,24 @@
 import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { useFlow } from '@/contexts/flow-context'
-
-interface Student {
-  id: string
-  name: string
-  campus: string
-  course: string
-  bio: string
-  compatibilityScore: number
-  status: 'analyzing' | 'matched' | 'selected'
-}
-
-const mockStudents: Student[] = [
-  {
-    id: '1',
-    name: 'Chioma Adeyemi',
-    campus: 'UI, Lagos',
-    course: 'Business Administration',
-    bio: 'Fashion enthusiast, active on TikTok and Instagram. Makes purchasing decisions based on peer recommendations.',
-    compatibilityScore: 96,
-    status: 'selected',
-  },
-  {
-    id: '2',
-    name: 'Tunde Okafor',
-    campus: 'OAU, Ife',
-    course: 'Consumer Psychology',
-    bio: 'Researches consumer behavior, interested in brand strategy. High engagement with emerging brands.',
-    compatibilityScore: 92,
-    status: 'selected',
-  },
-  {
-    id: '3',
-    name: 'Blessing Obi',
-    campus: 'LASPOTECH, Lagos',
-    course: 'Marketing',
-    bio: 'Active participant in focus groups, analytical thinker. Strong digital media consumption patterns.',
-    compatibilityScore: 89,
-    status: 'matched',
-  },
-  {
-    id: '4',
-    name: 'Kadir Hussein',
-    campus: 'ABU, Zaria',
-    course: 'Media & Communication',
-    bio: 'Influencer micro-content creator. Interested in discussing brand evolution and market trends.',
-    compatibilityScore: 87,
-    status: 'matched',
-  },
-  {
-    id: '5',
-    name: 'Ada Nwosu',
-    campus: 'UNIBEN, Benin',
-    course: 'Business Studies',
-    bio: 'Engaged consumer, participates actively in surveys. Thoughtful perspectives on market dynamics.',
-    compatibilityScore: 84,
-    status: 'analyzing',
-  },
-]
+import { meta, students } from '@/data/demo-data'
+import type { DemoStudent } from '@/data/demo-data'
 
 export function MatchingPipeline() {
   const { nextPage } = useFlow()
-  const [students, setStudents] = useState<Student[]>([])
+  const [matchedStudents, setMatchedStudents] = useState<DemoStudent[]>([])
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
     // Simulate loading and matching process
     const timer = setTimeout(() => {
-      setStudents(mockStudents)
+      setMatchedStudents(students)
       setIsLoading(false)
     }, 1000)
     return () => clearTimeout(timer)
   }, [])
 
-  // Auto-advance to next page after results are loaded
-  useEffect(() => {
-    if (!isLoading) {
-      const timer = setTimeout(() => {
-        nextPage()
-      }, 15000)
-      return () => clearTimeout(timer)
-    }
-  }, [isLoading, nextPage])
-
-  const selectedStudents = students.filter((s) => s.status === 'selected')
+  const selectedStudents = matchedStudents.filter((s) => s.status === 'selected')
 
   return (
     <div className="w-full">
@@ -103,7 +37,7 @@ export function MatchingPipeline() {
       {isLoading ? (
         <div className="space-y-8">
           {/* Loading State */}
-          <div className="p-8 rounded-2xl border border-border bg-card/60 backdrop-blur-sm space-y-6">
+          <div className="p-8 rounded-md border border-border bg-card space-y-6">
             <div className="space-y-4">
               <div className="flex items-center gap-4 group">
                 <div className="w-2.5 h-2.5 rounded-full bg-primary animate-pulse flex-shrink-0"></div>
@@ -141,13 +75,13 @@ export function MatchingPipeline() {
               <div className="h-2.5 w-full bg-border rounded-full overflow-hidden">
                 <div className="h-full w-3/5 bg-primary animate-pulse rounded-full"></div>
               </div>
-              <p className="text-2xl font-bold text-primary mt-3">18 <span className="text-sm font-medium text-muted-foreground">/ 32</span></p>
+              <p className="text-2xl font-bold text-primary mt-3">{students.length} <span className="text-sm font-medium text-muted-foreground">/ {students.length}</span></p>
             </div>
             <div className="p-6 rounded-xl bg-muted/20 border border-border hover:border-primary/30 transition-smooth">
               <p className="text-xs font-semibold text-muted-foreground mb-3 uppercase tracking-wide">
                 Avg Compatibility
               </p>
-              <p className="text-2xl font-bold text-primary">91<span className="text-sm font-medium text-muted-foreground">%</span></p>
+              <p className="text-2xl font-bold text-primary">{Math.round(students.reduce((total, student) => total + student.compatibilityScore, 0) / students.length)}<span className="text-sm font-medium text-muted-foreground">%</span></p>
             </div>
           </div>
         </div>
@@ -156,9 +90,9 @@ export function MatchingPipeline() {
           {/* Pipeline Overview */}
           <div className="grid grid-cols-4 gap-3">
             {[
-              { label: 'Analyzed', count: 32, status: 'complete' },
-              { label: 'Intake Complete', count: 28, status: 'complete' },
-              { label: 'Scored', count: 28, status: 'complete' },
+              { label: 'Analyzed', count: students.length, status: 'complete' },
+              { label: 'Intake Complete', count: meta.totalConversations, status: 'complete' },
+              { label: 'Scored', count: students.length, status: 'complete' },
               { label: 'Selected', count: selectedStudents.length, status: 'active' },
             ].map((stage, idx) => (
               <div
@@ -192,7 +126,7 @@ export function MatchingPipeline() {
               {selectedStudents.map((student) => (
                 <div
                   key={student.id}
-                  className="p-6 rounded-xl border border-border bg-card/50 hover:border-primary/30 hover:bg-card/80 transition-smooth hover:shadow-sm"
+                  className="p-6 rounded-md border border-border bg-card hover:border-primary/30 transition-smooth"
                 >
                   <div className="flex items-start justify-between gap-6">
                     <div className="flex-1">
@@ -242,11 +176,11 @@ export function MatchingPipeline() {
           <details className="group">
             <summary className="cursor-pointer p-4 rounded-lg border border-border bg-muted/30 hover:bg-muted/50 transition-colors">
               <span className="text-sm font-semibold text-foreground">
-                View {students.filter((s) => s.status !== 'selected').length} Additional Matches
+                View {matchedStudents.filter((s) => s.status !== 'selected').length} Additional Matches
               </span>
             </summary>
             <div className="mt-3 grid gap-3 p-4 border border-border rounded-lg bg-card">
-              {students
+              {matchedStudents
                 .filter((s) => s.status !== 'selected')
                 .map((student) => (
                   <div

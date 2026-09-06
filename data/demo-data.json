@@ -1,0 +1,96 @@
+{
+  "brief": {
+    "brandName": "The Gen-Z Corp",
+    "objectives": "Understand how Gen Z students in Lagos prefer to discover new fashion brands and what emotional triggers influence their purchasing decisions",
+    "targetAudience": "Students aged 18-24 currently studying at universities in Lagos and Abuja, interested in fashion and lifestyle, active on social media platforms",
+    "keyQuestions": "How do students currently discover new fashion brands? What are the main pain points? What emotional appeals resonate most? How influential are peer recommendations?"
+  },
+  "students": [
+    { "id": "1", "name": "Chioma Adeyemi", "campus": "UI, Lagos", "course": "Business Administration", "bio": "Fashion enthusiast, active on TikTok and Instagram. Makes purchasing decisions based on peer recommendations.", "compatibilityScore": 96, "status": "selected" },
+    { "id": "2", "name": "Tunde Okafor", "campus": "OAU, Ife", "course": "Consumer Psychology", "bio": "Researches consumer behavior, interested in brand strategy. High engagement with emerging brands.", "compatibilityScore": 92, "status": "selected" },
+    { "id": "3", "name": "Blessing Obi", "campus": "LASPOTECH, Lagos", "course": "Marketing", "bio": "Active participant in focus groups, analytical thinker. Strong digital media consumption patterns.", "compatibilityScore": 89, "status": "matched" },
+    { "id": "4", "name": "Kadir Hussein", "campus": "ABU, Zaria", "course": "Media & Communication", "bio": "Influencer micro-content creator. Interested in discussing brand evolution and market trends.", "compatibilityScore": 87, "status": "matched" },
+    { "id": "5", "name": "Ada Nwosu", "campus": "UNIBEN, Benin", "course": "Business Studies", "bio": "Engaged consumer, participates actively in surveys. Thoughtful perspectives on market dynamics.", "compatibilityScore": 84, "status": "analyzing" }
+  ],
+  "conversations": [
+    {
+      "studentName": "Chioma Adeyemi", "studentCampus": "UI, Ibadan", "studentCourse": "Business Administration", "duration": "6 min", "insightsCount": 5,
+      "messages": [
+        { "id": "1", "type": "moderator", "content": "hey! so when last did you buy a new outfit or piece of clothing — like actually pull out your money and pay for something. what was it?", "timestamp": "2:30 PM" },
+        { "id": "2", "type": "student", "content": "lol okay so like 2 weeks ago I bought a pair of wide leg jeans from a vendor on IG. I'd been eyeing it since December sha", "timestamp": "2:31 PM", "studentName": "Chioma" },
+        { "id": "3", "type": "moderator", "content": "since december? what took you so long to actually buy it", "timestamp": "2:31 PM" },
+        { "id": "4", "type": "student", "content": "I no guide honestly 😭 but also I kept seeing different styles on my feed and I was like this is pretty dope I need to get this", "timestamp": "2:32 PM", "studentName": "Chioma" },
+        { "id": "5", "type": "moderator", "content": "what changed 2 weeks ago that made you finally go through with it", "timestamp": "2:33 PM" },
+        { "id": "6", "type": "student", "content": "I saw my coursemate wearing something similar to a hangout and it looked very nice on her, so that pushed me", "timestamp": "2:33 PM", "studentName": "Chioma" },
+        { "id": "7", "type": "moderator", "content": "did you compare it anywhere else before paying this particular vendor, or was it straight to checkout", "timestamp": "2:34 PM" },
+        { "id": "8", "type": "student", "content": "I checked 2 other pages sha, one was cheaper but the reviews under her post were giving \"fabric too thin\" I no gree", "timestamp": "2:35 PM", "studentName": "Chioma" },
+        { "id": "9", "type": "moderator", "content": "how much was the price difference between the one you picked and the cheaper option", "timestamp": "2:35 PM" },
+        { "id": "10", "type": "student", "content": "like 3k difference, 12k vs 9k. I just felt like paying small extra for something that won't disappoint me was worth it", "timestamp": "2:36 PM", "studentName": "Chioma" },
+        { "id": "11", "type": "moderator", "content": "got you. now think of something you almost bought recently but talked yourself out of — what happened there", "timestamp": "2:37 PM" },
+        { "id": "12", "type": "student", "content": "omo yes, there was this crop top set, really nice, but when I checked the vendor's page well well, all the \"customer photos\" looked kind of recycled, like reused from a bigger store. that scared me off", "timestamp": "2:38 PM", "studentName": "Chioma" },
+        { "id": "13", "type": "moderator", "content": "interesting — what specifically made you feel the photos were reused", "timestamp": "2:38 PM" },
+        { "id": "14", "type": "student", "content": "the lighting and background were too consistent across different \"customers,\" like it's the same studio setup. felt fake so I closed the app", "timestamp": "2:39 PM", "studentName": "Chioma" },
+        { "id": "15", "type": "moderator", "content": "thanks so much for your time, really appreciate it, Chioma!", "timestamp": "2:40 PM" }
+      ]
+    },
+    {
+      "studentName": "Tunde Bakare", "studentCampus": "OAU, Ile-Ife", "studentCourse": "Mechanical Engineering", "duration": "5 min", "insightsCount": 2,
+      "messages": [
+        { "id": "1", "type": "moderator", "content": "hey Tunde, when last did you buy any clothing item or shoes? walk me through it.", "timestamp": "4:10 PM" },
+        { "id": "2", "type": "student", "content": "I got a pair of sneakers last month from the thrift market around campus. Just some regular forces.", "timestamp": "4:11 PM", "studentName": "Tunde" },
+        { "id": "3", "type": "moderator", "content": "what made you go to the physical market instead of checking online?", "timestamp": "4:11 PM" },
+        { "id": "4", "type": "student", "content": "nah, for shoes I have to test the fit. You can't trust these online sizes, plus I need to check the sole to be sure it's durable.", "timestamp": "4:12 PM", "studentName": "Tunde" },
+        { "id": "5", "type": "moderator", "content": "did you end up paying the first price the seller called?", "timestamp": "4:13 PM" },
+        { "id": "6", "type": "student", "content": "definitely not lol. He called 12k, I priced it down to 8k. It's standard practice, if you don't haggle they'll just cheat you.", "timestamp": "4:13 PM", "studentName": "Tunde" },
+        { "id": "7", "type": "moderator", "content": "was there a point where you almost didn't buy it?", "timestamp": "4:14 PM" },
+        { "id": "8", "type": "student", "content": "yeah, when he was insisting on 10k, I just walked away. He eventually called me back.", "timestamp": "4:14 PM", "studentName": "Tunde" },
+        { "id": "9", "type": "moderator", "content": "interesting. do you ever buy clothes online then, or is it always physical for you?", "timestamp": "4:15 PM" },
+        { "id": "10", "type": "student", "content": "I only do online for basic stuff like plain tees from brands I already know. Anything that needs perfect fitting, I'm not risking it.", "timestamp": "4:16 PM", "studentName": "Tunde" },
+        { "id": "11", "type": "moderator", "content": "makes sense. thanks a lot for your time Tunde, really helpful.", "timestamp": "4:16 PM" }
+      ]
+    },
+    {
+      "studentName": "Amara Nwosu", "studentCampus": "UNILAG, Lagos", "studentCourse": "Mass Communication", "duration": "6 min", "insightsCount": 2,
+      "messages": [
+        { "id": "1", "type": "moderator", "content": "hi Amara, tell me about the last piece of clothing or accessory you actually paid for.", "timestamp": "11:02 AM" },
+        { "id": "2", "type": "student", "content": "I bought a mini bag recently. Saw an influencer carrying it on her page, it had this crazy drip, so I tapped the vendor's tag.", "timestamp": "11:03 AM", "studentName": "Amara" },
+        { "id": "3", "type": "moderator", "content": "what did you do after getting to the vendor's page? did you buy straight away?", "timestamp": "11:03 AM" },
+        { "id": "4", "type": "student", "content": "nope, I had to scroll through their older posts first. I was looking for customer tags and checking the comment section.", "timestamp": "11:04 AM", "studentName": "Amara" },
+        { "id": "5", "type": "moderator", "content": "what exactly were you looking for in the comments?", "timestamp": "11:05 AM" },
+        { "id": "6", "type": "student", "content": "just checking if anyone was dragging them for late delivery or fake items. You know how IG vendors can be.", "timestamp": "11:05 AM", "studentName": "Amara" },
+        { "id": "7", "type": "moderator", "content": "and what did you find this time?", "timestamp": "11:06 AM" },
+        { "id": "8", "type": "student", "content": "mostly positive stuff. A few people complained about the delivery fee, but no one called it a scam, so I felt safe enough to order.", "timestamp": "11:06 AM", "studentName": "Amara" },
+        { "id": "9", "type": "moderator", "content": "was the price a big factor in your decision?", "timestamp": "11:07 AM" },
+        { "id": "10", "type": "student", "content": "not really, it was more about credibility. I've fallen for an IG scam before, so I value my peace of mind over saving a few naira.", "timestamp": "11:07 AM", "studentName": "Amara" },
+        { "id": "11", "type": "moderator", "content": "oh wow, what happened the time you got scammed?", "timestamp": "11:08 AM" },
+        { "id": "12", "type": "student", "content": "paid 25k for a two-piece set, waited three weeks, and the page literally disappeared. Since then I do proper background checks.", "timestamp": "11:09 AM", "studentName": "Amara" },
+        { "id": "13", "type": "moderator", "content": "thank you so much Amara, really appreciate you sharing that.", "timestamp": "11:09 AM" }
+      ]
+    }
+  ],
+  "insights": [
+    { "id": "c1", "category": "social_discovery", "theme": "Feed exposure builds desire over time", "description": "Repeated exposure to a style on social feeds builds desire well before the purchase actually happens.", "frequency": 8, "quote": "I kept seeing different styles on my feed and I was like this is pretty dope I need to get this.", "studentName": "Chioma Adeyemi", "studentCampus": "UI, Ibadan", "sentiment": "positive" },
+    { "id": "c2", "category": "budget_strategies", "theme": "Budget delays purchases, not interest", "description": "Students often want an item for months before buying; the delay is financial, not a lack of desire.", "frequency": 6, "quote": "I no guide honestly, that's why it took so long.", "studentName": "Chioma Adeyemi", "studentCampus": "UI, Ibadan", "sentiment": "neutral" },
+    { "id": "c3", "category": "peer_trigger", "theme": "Peer styling is the final trigger", "description": "Seeing someone similar wear an item in person is often the tipping point that turns interest into a purchase.", "frequency": 7, "quote": "I saw my coursemate wearing something similar… and it looked very nice on her, so that pushed me.", "studentName": "Chioma Adeyemi", "studentCampus": "UI, Ibadan", "sentiment": "positive" },
+    { "id": "c4", "category": "vendor_trust", "theme": "Quality complaints beat a lower price", "description": "A cheaper option loses out once reviews mention poor quality; price becomes secondary.", "frequency": 6, "quote": "The reviews under her post were giving fabric too thin, I no gree.", "studentName": "Chioma Adeyemi", "studentCampus": "UI, Ibadan", "sentiment": "neutral" },
+    { "id": "c5", "category": "vendor_trust", "theme": "Recycled customer photos kill trust", "description": "Photos that look staged or reused are an instant red flag, even for items the buyer likes.", "frequency": 5, "quote": "The lighting and background were too consistent across different customers… felt fake.", "studentName": "Chioma Adeyemi", "studentCampus": "UI, Ibadan", "sentiment": "negative" },
+    { "id": "t1", "category": "physical_inspection", "theme": "Physical inspection is non-negotiable for shoes", "description": "For footwear, students want to see and touch the item before paying.", "frequency": 7, "quote": "For shoes I must see and touch am first… check if the sole is still strong.", "studentName": "Tunde Bakare", "studentCampus": "OAU, Ile-Ife", "sentiment": "positive" },
+    { "id": "t2", "category": "physical_inspection", "theme": "In-person bargaining is expected", "description": "At physical thrift markets, haggling and walking away are normal purchase tactics.", "frequency": 6, "quote": "If you no haggle they go just dey smile.", "studentName": "Tunde Bakare", "studentCampus": "OAU, Ile-Ife", "sentiment": "positive" },
+    { "id": "a1", "category": "social_discovery", "theme": "Influencer credibility is vetted in comments", "description": "Students check prior comments and posts before trusting influencer-promoted items.", "frequency": 7, "quote": "I went to check her older posts first, to see if people were complaining.", "studentName": "Amara Nwosu", "studentCampus": "UNILAG, Lagos", "sentiment": "positive" },
+    { "id": "a2", "category": "vendor_trust", "theme": "A past scam permanently increases scrutiny", "description": "One bad vendor experience changes how students vet every new seller.", "frequency": 6, "quote": "Since then I dey very careful.", "studentName": "Amara Nwosu", "studentCampus": "UNILAG, Lagos", "sentiment": "negative" },
+    { "id": "f1", "category": "personal_recommendation", "theme": "Family recommendations override reviews", "description": "A trusted family referral can remove the need for independent verification.", "frequency": 6, "quote": "My mother has used her for years, so I trusted her immediately.", "studentName": "Fatima Abdullahi", "studentCampus": "ABU, Zaria", "sentiment": "positive" },
+    { "id": "f2", "category": "personal_recommendation", "theme": "Finished work builds trust in new providers", "description": "For high-risk purchases, seeing a friend's finished item matters more than ratings.", "frequency": 5, "quote": "Seeing the actual finished work matters more than anything.", "studentName": "Fatima Abdullahi", "studentCampus": "ABU, Zaria", "sentiment": "positive" },
+    { "id": "e1", "category": "budget_strategies", "theme": "Group buying unlocks higher-priced items", "description": "Splitting cost with a friend turns an otherwise unaffordable item into a viable purchase.", "frequency": 7, "quote": "We split it with my roommate… discount for buying as a pair.", "studentName": "Emeka Chukwu", "studentCampus": "UNN, Nsukka", "sentiment": "positive" },
+    { "id": "e2", "category": "budget_strategies", "theme": "Shared purchases need coordination", "description": "Group buying adds a coordination cost around timing and preferences.", "frequency": 4, "quote": "We discuss well before before we pay.", "studentName": "Emeka Chukwu", "studentCampus": "UNN, Nsukka", "sentiment": "neutral" },
+    { "id": "b1", "category": "social_discovery", "theme": "TikTok trends drive thrift hunting", "description": "Short-form video is pushing students toward thrift markets for more original pieces.", "frequency": 7, "quote": "TikTok honestly, I kept seeing people style thrifted pieces in really creative ways.", "studentName": "Blessing Etim", "studentCampus": "UNIBEN, Benin City", "sentiment": "positive" },
+    { "id": "b2", "category": "peer_trigger", "theme": "Friends act as real-time gatekeepers", "description": "Friends can veto a purchase in the moment and that veto is usually respected.", "frequency": 6, "quote": "Blessing no… I put it back immediately.", "studentName": "Blessing Etim", "studentCampus": "UNIBEN, Benin City", "sentiment": "neutral" },
+    { "id": "d1", "category": "status_signaling", "theme": "Clothing choices signal social status", "description": "Specific items, especially shoes, signal how seriously someone takes appearance and standing.", "frequency": 7, "quote": "People notice shoes especially, I wanted something that put me in a certain category.", "studentName": "David Okonkwo", "studentCampus": "Covenant, Ota", "sentiment": "positive" },
+    { "id": "d2", "category": "status_signaling", "theme": "Fear of fakes pushes buyers toward originals", "description": "The risk of being seen in a fake can outweigh the cost savings.", "frequency": 6, "quote": "People around here can tell the real from fake almost immediately.", "studentName": "David Okonkwo", "studentCampus": "Covenant, Ota", "sentiment": "negative" },
+    { "id": "z1", "category": "vendor_trust", "theme": "Slow responses are a pre-payment red flag", "description": "Slow pre-sale replies are treated as a predictor of poor service after payment.", "frequency": 7, "quote": "If a vendor is slow to reply before I've even paid them, I already know after payment go worse.", "studentName": "Zainab Yusuf", "studentCampus": "BUK, Kano", "sentiment": "negative" },
+    { "id": "z2", "category": "vendor_trust", "theme": "Fast replies and tracking rebuild confidence", "description": "Quick communication and delivery tracking counteract prior bad experiences.", "frequency": 6, "quote": "She replied fast… sends tracking updates once you pay.", "studentName": "Zainab Yusuf", "studentCampus": "BUK, Kano", "sentiment": "positive" },
+    { "id": "k1", "category": "budget_strategies", "theme": "Buyers wait for sales to manage budget", "description": "During tight financial periods, students delay non-urgent purchases for known sale windows.", "frequency": 7, "quote": "Anything that's not urgent I just hold… once I see the countdown I know to wait.", "studentName": "Kelechi Nwachukwu", "studentCampus": "FUTA, Akure", "sentiment": "positive" },
+    { "id": "k2", "category": "budget_strategies", "theme": "Waiting for a sale can mean losing the item", "description": "Buyers generally accept the trade-off of losing an item when they wait for a better price.", "frequency": 4, "quote": "I lost a shirt I liked, but I don't regret waiting.", "studentName": "Kelechi Nwachukwu", "studentCampus": "FUTA, Akure", "sentiment": "neutral" },
+    { "id": "ai1", "category": "return_fit", "theme": "Unclear returns are a dealbreaker", "description": "A clear return policy is a first-check requirement after a stressful return experience.", "frequency": 7, "quote": "First thing I check is the return policy… if I don't see one clearly stated I just close the page.", "studentName": "Aisha Mohammed", "studentCampus": "LASU, Lagos", "sentiment": "positive" },
+    { "id": "ai2", "category": "return_fit", "theme": "Bad sizing drives direct verification", "description": "After poor fit experiences, students ask vendors for exact measurements.", "frequency": 6, "quote": "I now message vendors directly to ask for exact measurements.", "studentName": "Aisha Mohammed", "studentCampus": "LASU, Lagos", "sentiment": "positive" }
+  ]
+}

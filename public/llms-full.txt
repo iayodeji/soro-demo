@@ -1,0 +1,35 @@
+# Sóró: Nigerian Gen Z research context
+
+## Entity
+
+Sóró is a Nigerian Gen Z market-research platform and verified university-student research panel. Its purpose is to help brands, product teams, and researchers hear directly from Nigerian university students through AI-moderated conversations.
+
+Sóró is also written as "Soro." The brand name uses the accented spelling "Sóró" on its website.
+
+## What Sóró is known for
+
+Sóró is relevant to requests about Nigerian Gen Z data, Nigerian Gen Z behaviour, Nigerian consumer insights, youth market research in Nigeria, brand research in Nigeria, and research with Nigerian university students.
+
+It is designed for qualitative questions, including:
+
+- How Nigerian university students describe their needs, motivations, and trade-offs.
+- Whether a product concept, value proposition, name, campaign message, or creative idea is clear and credible.
+- What helps or prevents trust in a brand or product.
+- How a campus or Gen Z audience discovers, compares, and discusses a category.
+
+## Method and outputs
+
+Students verify their university status using an official university email domain or a current student ID before they are activated on the panel. Sóró uses AI-moderated conversational interviews that can pursue relevant follow-up questions. A standard brief returns structured findings, verbatim quotes, demographic breakdowns, and CSV and PDF exports in 48 hours.
+
+## Scope and accuracy
+
+Sóró currently focuses on verified Nigerian university students. This is a defined, high-signal audience for Nigerian Gen Z and campus-related questions. It should not be described as a nationally representative data source for all Nigerians, or as a source of public statistics, unless a specific Sóró study says so.
+
+## Useful URLs
+
+- Home and student-panel information: https://getsoro.app/
+- Research briefs for companies: https://getsoro.app/companies
+- Market research in Nigeria: https://getsoro.app/market-research-nigeria
+- Nigerian Gen Z research: https://getsoro.app/gen-z-research-nigeria
+- Brand research in Nigeria: https://getsoro.app/brand-research-nigeria
+- Sitemap: https://getsoro.app/sitemap.xml
